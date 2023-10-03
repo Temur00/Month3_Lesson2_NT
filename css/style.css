@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  background: rgb(2, 24, 35);
+}
+
+.main_contents {
+  width: 1000px;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 300px; */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 74px;
+  overflow: hidden;
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+}
+
+/* ANIMATION FIRST AND LAST */
+
+.main_contents span:nth-child(1),
+span:nth-child(11) {
+  animation-name: LettersAnimation;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+@keyframes LettersAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateX(0) translateY(0);
+  }
+
+  75% {
+    transform: translateY(100px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0px);
+  }
+}
+
+/* ANIMATION SECOND AND NINTH */
+.main_contents span:nth-child(2),
+span:nth-child(10) {
+  animation-name: LettersAnimation;
+  animation-duration: 2s;
+  animation-delay: 2.1s;
+}
+
+@keyframes LettersAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateX(0) translateY(0);
+  }
+
+  75% {
+    transform: translateY(100px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0px);
+  }
+}
+
+/* ANIMATION THIRD AND EIGHTH */
+.main_contents span:nth-child(3),
+span:nth-child(9) {
+  animation-name: LettersAnimation;
+  animation-duration: 2s;
+  animation-delay: 2.2s;
+}
+
+@keyframes LettersAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateX(0) translateY(0);
+  }
+  75% {
+    transform: translateY(100px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0px);
+  }
+}
+
+/* ANIMATION FOURTH AND SEVENTH */
+.main_contents span:nth-child(4),
+span:nth-child(8) {
+  animation-name: LettersAnimation;
+  animation-duration: 2s;
+  animation-delay: 2.3s;
+}
+
+@keyframes LettersAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateX(0) translateY(0);
+  }
+
+  75% {
+    transform: translateY(100px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0px);
+  }
+}
+
+/* ANIMATION FIFTH AND SIXTH */
+.main_contents span:nth-child(5),
+span:nth-child(7) {
+  animation-name: LettersAnimation;
+  animation-duration: 2s;
+  animation-delay: 2.4s;
+}
+
+@keyframes LettersAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateX(0) translateY(0);
+  }
+
+  75% {
+    transform: translateY(100px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0px);
+  }
+}
+
+/* IMAGE ANIMATION */
+.main_contents img {
+  width: 340px;
+  height: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  animation-name: LogoAnimation;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+@keyframes LogoAnimation {
+  0% {
+    margin-top: -200px;
+  }
+  50% {
+    margin-top: 100px;
+    width: 440px;
+    height: 400px;
+    fi
+  }
+  100% {
+    width: 340px;
+    height: 300px;
+    /* transform: translateY(200px); */
+  }
+}
+
+
+audio {
+  display: flex;
+  align-items: center;
+ cursor: pointer;
+ margin-top: 15%;
+ margin-left: 38%;
+}
+
